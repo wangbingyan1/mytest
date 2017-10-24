@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.6.RELEASE</version>
+  </parent>
+  <groupId>cn.theima</groupId>
+  <artifactId>springboot01</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <!-- 修改JDK版本 -->
+  <properties>
+  	<java.version>1.7</java.version>
+  </properties>
+  
+  <!-- 配置依赖关系 -->
+	<dependencies>
+		<!-- 配置WEB启动器 内置(tomcat,SpringMVC、Restful、jackson) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		<!-- 配置devtools开启热部署 -->
+	<!-- 	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency> -->
+		
+	</dependencies>
+	
+	<!-- 这个插件其实付工程中已经有了,.我这只是自己试试添加一个spring-boot-maven插件 -->
+	<!-- <build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build> -->
+
+
+</project>
